@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Login</title>
+<link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><img src="img/logo.png" alt="KRIMEN logo"></div>
+    <nav>
+      <a href="index.html">Catálogo</a>
+      <a id="link_admin" href="admin.html" style="display:none">Admin</a>
+      <a id="link_login" href="login.html">Login</a>
+      <a id="link_register" href="register.html">Registro</a>
+      <button id="link_logout" onclick="logout()" style="display:none">Cerrar sesión</button>
+    </nav>
+  </div>
+</header>
+<main style="max-width:520px;margin:auto"><h1>Login</h1>
+<form onsubmit="loginSubmit(event)"><label>Correo <input id="login_email" class="input"></label><div id="e_login_email" class="error"></div>
+<label>Contraseña <input id="login_pass" type="password" class="input" minlength="4" maxlength="10"></label><div id="e_login_pass" class="error"></div>
+<button class="btn">Entrar</button></form><p>Tip: admin@admin / admin</p><p><a href="register.html">Crear cuenta</a></p></main></body></html>

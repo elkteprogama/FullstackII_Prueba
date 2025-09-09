@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Admin</title>
+<link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head>
+<body onload="adminCheck()">
+<header>
+  <div class="wrap">
+    <div class="brand"><img src="img/logo.png" alt="KRIMEN logo"></div>
+    <nav>
+      <a href="index.html">Catálogo</a>
+      <a id="link_admin" href="admin.html" style="display:none">Admin</a>
+      <a id="link_login" href="login.html">Login</a>
+      <a id="link_register" href="register.html">Registro</a>
+      <button id="link_logout" onclick="logout()" style="display:none">Cerrar sesión</button>
+    </nav>
+  </div>
+</header>
+
+<main><h1>Panel Admin</h1>
+  <div class="row">
+    <div class="card" style="width:280px">
+      <h3>Productos</h3>
+      <p class="note">Total: <strong id="stat_products">0</strong></p>
+      <p><a class="btn" href="admin_productos.html">Gestionar productos</a></p>
+    </div>
+    <div class="card" style="width:280px">
+      <h3>Usuarios</h3>
+      <p class="note">Total: <strong id="stat_users">0</strong></p>
+      <p><a class="btn-sec" href="admin_usuarios.html">Ver usuarios</a></p>
+    </div>
+  </div>
+</main></body></html>
